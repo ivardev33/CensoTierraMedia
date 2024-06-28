@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.ListarProfesiones">
+
+    <ImageView
+        android:id="@+id/fondoVerProfesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/fondoPantalla" />
+
+    <ImageButton
+        android:id="@+id/btnAtrasListadoProfesion"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollListadoProfesion"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/txtNombreProfesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="98dp"
+        android:background="#000000"
+        android:text="Nombre Profesión"
+        android:textAlignment="center"
+        android:textColor="#FAF7F7"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollListadoProfesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollListadoProfesion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="34dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Settings_prueba"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasListadoProfesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreProfesion">
+
+        <TableLayout
+            android:id="@+id/layoutListadoProfesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/filaCabeceraListado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp">
+
+                <TextView
+                    android:id="@+id/txtTituloNombreHab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/txtTituloApellidosHab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apellidos"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/txtTituloRazaHab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:pointerIcon="wait"
+                    android:text="Raza"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/txtTituloUbicacionHab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ubicación"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

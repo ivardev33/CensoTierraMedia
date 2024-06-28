@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.VerProfesiones">
+
+    <ImageView
+        android:id="@+id/imgFondoEligeProfesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_elige_profesion" />
+
+    <TextView
+        android:id="@+id/txtEligeProfesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="111dp"
+        android:text="Elige Profesion"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinProfesiones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListarProfesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Listar Profesión"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasEligeProfesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinProfesiones" />
+
+    <Spinner
+        android:id="@+id/spinProfesiones"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="151dp"
+        android:background="@color/backgroundBnrElegirProfesion"
+        app:layout_constraintBottom_toTopOf="@+id/btnListarProfesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEligeProfesion" />
+
+    <ImageButton
+        android:id="@+id/btnAtrasEligeProfesion"
+        android:layout_width="47dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarProfesion"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+</androidx.constraintlayout.widget.ConstraintLayout>

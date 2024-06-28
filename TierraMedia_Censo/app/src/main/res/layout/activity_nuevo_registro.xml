@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleX="1.1"
+    tools:context="ui.NuevoRegistro">
+
+    <ImageView
+        android:id="@+id/imgFondo_Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_registro" />
+
+    <TextView
+        android:id="@+id/txtNuevoHabitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="227dp"
+        android:text="Nuevo Habitante"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnInsertarEnCenso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualizarDatos" />
+
+    <Button
+        android:id="@+id/btnActualizarDatos"
+        android:layout_width="171dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Actualizar Datos"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNuevoHabitante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInsertarEnCenso"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Insertar en Censo"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNuevoHabitante" />
+
+    <ImageButton
+        android:id="@+id/btnAtrasNuevoRegistro"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="376dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtResumenHabitante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <EditText
+        android:id="@+id/txtResumenHabitante"
+        android:layout_width="352dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="90dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="10sp"
+        android:text="Nombre: Nombre\nApellidos: Apellidos\nEdad: Edad\nRaza: Raza\nUbicación: Ubicación\nProfesión: Profesión"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtrasNuevoRegistro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="#FFEB3B"
+    tools:context="ui.EligeOpcion">
+
+    <ImageView
+        android:id="@+id/imgFondo_SeleccionInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_elige_opcion" />
+
+    <Button
+        android:id="@+id/btnBorrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       app:layout_constraintBottom_toTopOf="@id/btnNuevoRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="BORRAR HABITANTE"
+        android:textColor="@color/txtBtnsApp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:layout_marginBottom="38dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnNuevoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Nuevo Registro"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerProfesiones"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAtrasEligeOpcion"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerProfesiones"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <Button
+        android:id="@+id/btnVerCenso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Ver Censo"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerProfesiones"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerProfesiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/backgroundbtnsApp"
+        android:text="Ver Profesiones"
+        android:textColor="@color/txtBtnsApp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasEligeOpcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
